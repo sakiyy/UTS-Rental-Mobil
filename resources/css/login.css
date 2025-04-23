@@ -11,6 +11,19 @@ body {
     display: flex;
     height: 100vh;
 }
+.logo-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.logo-wrapper img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 
 /* Panel Kiri: Form Login */
 .left-panel {
@@ -112,7 +125,7 @@ input::placeholder {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 300px; /* Biar gak kegedean */
+    width: 400px;
     height: auto;
 }
 

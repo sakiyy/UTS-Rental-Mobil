@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Persewaan Mobil</title>
+    <title>Login - Rental Mobil</title>
 
     <!-- Bootstrap & Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -19,13 +19,17 @@
 </head>
 
 <body>
+        <div class="logo-wrapper">
+            <img src="{{ Vite::asset('resources/images/Rental-Mobil.png') }}" alt="Logo Rental Mobil">
+        </div>
+
     <div class="main-container d-flex">
         <!-- Bagian Kiri (Form Login) -->
         <div class="left-panel d-flex align-items-center justify-content-center">
             <div class="form-container w-75">
 
                 <div class="welcome-text text-center">
-                    <h2>Login - Persewaan Mobil</h2>
+                    <h2>Login - Rental Mobil</h2>
                 </div>
 
                 {{-- Pesan error dari session --}}
@@ -59,7 +63,6 @@
     <!-- Bagian Kanan (Ilustrasi) -->
     <div class="right-panel d-none d-md-block">
         <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="Mobil" class="centered-image">
-        <h2 class="text">RENTAL MOBIL</h2>
     </div>
 
 
